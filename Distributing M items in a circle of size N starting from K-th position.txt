@@ -1,0 +1,18 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int distributeinCircle(int A, int B, int C)
+{
+    int n=(A+C-1)%B;
+    if(n==0)
+    {
+        return B;
+    }
+    return n;
+}
+
+
+int main()
+{
+    cout<< distributeinCircle(8,5,2)<<endl;
+}
